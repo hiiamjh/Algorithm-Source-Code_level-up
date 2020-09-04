@@ -1,12 +1,12 @@
 #import sys
-#sys.stdin=open("input.txt", "r")
+#sys.stdin = open("input.txt", "rt")
 
-answer = []
 n = int(input())
-temp = list(map(int, input().split()))
-answer += temp
+l1 = list(map(int, input().split()))
 m = int(input())
-temp = list(map(int, input().split()))
-answer += temp
-answer.sort()
-print(answer)
+l2 = list(map(int, input().split()))
+
+answer = sorted(l1+l2)
+
+for i in answer:
+    print(i, end=' ')
