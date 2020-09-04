@@ -1,20 +1,19 @@
 #import sys
-#sys.stdin=open("input.txt", "r")
+#sys.stdin = open("input.txt", "rt")
 
 n, m = map(int, input().split())
-a = list(map(int, input().split()))
-val = 0
+number = list(map(int, input().split()))
+
+temp = 0
 cnt = 0
 
 for i in range(n):
     for j in range(i, n):
-        val += a[j]
-        if val >= 3:
-            if val == 3:
-                cnt += 1
-            else:
-                pass
-            val = 0
+        temp += number[j]
+        if temp == 3:
+            cnt += 1
             break
-print(cnt)
 
+    temp = 0
+
+print(cnt)
