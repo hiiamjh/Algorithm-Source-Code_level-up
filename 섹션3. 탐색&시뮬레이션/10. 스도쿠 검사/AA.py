@@ -24,7 +24,7 @@ for i in sdk_t:
 '''
 def check(a):
     for i in range(9):
-        ch1 = [0]*10 #행검사
+        ch1 = [0]*10 #행검사 => 1~9
         ch2 = [0]*10 #열검사
         for j in range(9):
             ch1[a[i][j]] = 1

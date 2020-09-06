@@ -52,7 +52,7 @@ for i in range(n):
 sum1 = sum2 = 0
 for i in range(n):
     sum1 += a[i][i] #왼쪽 대각선의 최댓값
-    sum2 ++ a[i][n-i-1] #오른쪽 대각선의 최댓값
+    sum2 += a[i][n-i-1] #오른쪽 대각선의 최댓값
 if sum1 > largest:
         largest = sum1
     if sum2 > largest:
